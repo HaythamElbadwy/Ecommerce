@@ -1,0 +1,12 @@
+.heart{
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    z-index: 99;
+    cursor: pointer;
+    transition: .5s all;
+}
+.product:hover .heart{
+    right: 5px;
+}

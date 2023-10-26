@@ -1,0 +1,28 @@
+<div class="container py-5">
+
+    <div class="row">
+        <div class="col-md-2" *ngFor="let product of allProduct">
+
+
+            <div class="product px-3 py-5 position-relative overflow-hidden">
+
+                <i *ngIf="!wishListData.includes( $any(product.id) )" (click)="addfavourite(product.id)" class="fa-regular fa-heart heart"></i>
+                <i *ngIf="wishListData.includes( $any(product.id) )" (click)="removeFavourite(product.id)" class="fa-solid fa-heart heart"></i>
+
+                <a [routerLink]="['/productDetails',product.id]">
+                    <img [src]="product.imageCover" class="w-100" alt="">
+                    <p class="text-main">{{product.category.name}}</p>
+                    <h2 class="h6 fw-bold">{{product.title | trem : 2}}</h2>
+                    <div class="d-flex justify-content-between">
+                        <span>{{product.price}} EGP</span>
+                        <div>
+                            <i class="fa fa-star rating-color"></i>
+                            {{product.ratingsAverage}}
+                        </div>
+                    </div>
+                </a>
+                <button class="btn bg-main w-100 text-white" (click)="addToCart(product.id)">+Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
