@@ -1,0 +1,147 @@
+.home {
+  background-image: url('/src/assets/Image/manage_playlist_bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* width: 100vw; */
+  background-color: black;
+  z-index: 10;
+
+}
+
+.macaddres {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.856) 43.5%, rgba(0, 0, 0, 0) 100%);
+
+  width: 31rem;
+  height: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 2rem; */
+}
+
+@media (max-width: 768px) {
+  .macaddres {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+input {
+  width: 26rem;
+  height: 2.5rem;
+}
+
+button {
+  width: 26rem;
+  height: 2.5rem;
+}
+
+
+
+
+
+#login-form {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.637) 43.5%, rgba(0, 0, 0, 0) 100%);
+
+
+
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-size: contain;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  Custom styles for mobile input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Only move halfway because we have 2 sets of images */
+  }
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 30s linear infinite;
+  /* Adjust speed as needed */
+  width: max-content;
+}
+
+.poster {
+  background-image: url("/src/assets/Image/wishtv.jpg");
+}
+
+@media (max-width: 640px) {
+  .poster {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 57vh !important;
+  }
+}
+
+
+/* Mobile Screens (Small) */
+@media (max-width: 767px) {
+  header {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .wish_responive {
+    margin-top: 90px !important;
+    height: 35vh !important;
+  }
+}
+
+.managePlaylist_title {
+  margin-top: 2rem !important;
+}
+
+@media (max-width: 767px) {
+  .managePlaylist_title {
+    margin-top: 56px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .wish_title {
+    font-size: 22px !important;
+  }
+}
+
+/* .parent_title {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.637) 43.5%, rgba(0, 0, 0, 0) 100%);
+  padding: 5px;
+  width: 100%;
+} */
